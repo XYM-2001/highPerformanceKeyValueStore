@@ -13,8 +13,3 @@ void test_basic_operations() {
     assert(store.remove("key1"));
     assert(!store.get("key1", value));
 }
-
-int main() {
-    test_basic_operations();
-    return 0;
-}

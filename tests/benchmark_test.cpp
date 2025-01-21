@@ -19,7 +19,13 @@ void run_benchmark() {
               << duration.count() << "ms\n";
 }
 
+// Main function that runs both tests and benchmarks
 int main() {
+    std::cout << "Running unit tests...\n";
+    test_basic_operations();
+    std::cout << "Unit tests passed!\n\n";
+
+    std::cout << "Running benchmark...\n";
     run_benchmark();
     return 0;
 }
